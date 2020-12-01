@@ -1,0 +1,15 @@
+function stringSubstring(arg1, arg2) {
+let word = arg1;
+let text = arg2.toLowerCase().split(` `);
+let isFound = true;
+for(let a =0; a<text.length;a++){
+    if(text[a] === word){
+        console.log(text[a]);
+        isFound = false;
+        break
+    }
+}
+if(isFound){
+    console.log(`${word} not found!`);
+}
+}
